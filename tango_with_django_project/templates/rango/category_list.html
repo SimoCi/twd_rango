@@ -1,0 +1,10 @@
+<ul class="nav nav-list">
+    {% if cat_list %}
+        {% for cat in cat_list %}
+            <!-- following line changed to add a hyperlink -->
+            <li><a href="/rango/category/{{ cat.url }}" target="_blank">{{ cat.name  }}</a></li>
+        {% endfor %}
+    {% else %}
+        <li><strong>There are no categories present.</strong></li>
+    {% endif %}
+</ul>
