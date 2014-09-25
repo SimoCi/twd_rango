@@ -4,7 +4,7 @@ from keys import BING_API_KEY
 
 def run_query(search_terms):
     # specifying the base
-    root_url = 'http://api.datamarket.azure.com/Bing/Search'
+    root_url = 'https://api.datamarket.azure.com/bing/search/v1/'
     source = 'Web'
     
     # specify the amoutn of results you wish to be returned per page.
