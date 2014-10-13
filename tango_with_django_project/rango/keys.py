@@ -1,2 +1,2 @@
-# insert your BIng Api key
+# insert your Bing Api key
 BING_API_KEY = ''

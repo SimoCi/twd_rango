@@ -1,13 +1,15 @@
 from django.conf.urls import patterns, include, url
 from django.conf import settings # allows access to the variables defined within our project's settings.py file
 
+from tango_with_django_project import views
+
 # Uncomment the next two lines to enable the admin:
 from django.contrib import admin
 admin.autodiscover()
 
 urlpatterns = patterns('',
     # Examples:
-    # url(r'^$', 'tango_with_django_project.views.home', name='home'),
+    url(r'^$', 'tango_with_django_project.views.home', name='home'),
     # url(r'^tango_with_django_project/', include('tango_with_django_project.foo.urls')),
     url(r'^rango/', include('rango.urls')), # ADD THIS NEW TUPLE!
 
